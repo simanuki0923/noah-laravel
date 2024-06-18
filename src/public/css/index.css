@@ -1,0 +1,204 @@
+body {
+    background: linear-gradient(to bottom, #f9fafa, #d6ecfe);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* フォントを指定 */
+}
+
+.header {
+    background: white;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: solid 1px #e3a1a1;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1230px;
+}
+
+.header__logo {
+    color: #ffb400;
+    /* コントラストを調整 */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.contact-form__content {
+    margin: 20px auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+}
+
+.contact-form__heading {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #737875;
+}
+
+.card {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.card__img img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    color: #333;
+}
+
+.form__error {
+    color: #ff0000;
+    text-align: left;
+}
+
+.form__button-submit {
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 20px auto 0;
+    background: #ffb400;
+    color: white;
+    display: block;
+}
+
+.form__button-submit:hover {
+    background: #e39a00;
+}
+
+.center {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.form__group {
+    margin: 20px 0;
+}
+
+.form__group-content {
+    text-align: center;
+}
+
+.form__input--text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.form__input--text input,
+.form__input--text button {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.form__input--text input {
+    margin-bottom: 10px;
+}
+
+/* スマートフォン用のスタイル（~480px） */
+@media (max-width: 480px) {
+    .header__logo {
+        font-size: 20px;
+    }
+
+    .contact-form__heading {
+        font-size: 1.2em;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .form__button-submit {
+        width: 90%;
+    }
+
+    .form__input--text input,
+    .form__input--text button {
+        width: 90%;
+    }
+}
+
+/* タブレット用のスタイル（481px~768px） */
+@media (min-width: 481px) and (max-width: 768px) {
+    .header__logo {
+        font-size: 22px;
+    }
+
+    .contact-form__heading {
+        font-size: 1.3em;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .form__button-submit {
+        width: 80%;
+    }
+
+    .form__input--text input,
+    .form__input--text button {
+        width: 80%;
+    }
+}
+
+/* PC用のスタイル（769px~） */
+@media (min-width: 769px) {
+    .header__logo {
+        font-size: 25px;
+    }
+
+    .contact-form__heading {
+        font-size: 1.5em;
+    }
+
+    .card {
+        width: 60%;
+    }
+
+    .form__button-submit {
+        width: 60%;
+    }
+
+    .form__input--text input,
+    .form__input--text button {
+        width: 60%;
+    }
+}
+
